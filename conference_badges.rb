@@ -8,12 +8,7 @@ end
 
 def assign_rooms (attendees)
  
-  attendees.each_with_index.map { |name,index| "Hello, #{name}! You'll be assigned to room #{index+1}!"}
+  attendees.each_with_index.collect { |name,index| "Hello, #{name}! You'll be assigned to room #{index+1}!"}
   
 end
 
-def printer (attendees)
-  attendees.each_with_index.map do |name, index|
-   puts batch_badge_creator.chomp (names)
-    assign_rooms.chomp (name)
-end
