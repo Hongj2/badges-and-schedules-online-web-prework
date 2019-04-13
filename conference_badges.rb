@@ -13,5 +13,7 @@ def assign_rooms (attendees)
 end
 
 def printer (attendees)
-  attendees.each_with_index.map {|name, index| batch_badge_creator.chomp (name)}
+  attendees.each_with_index.map do |name, index|
+    batch_badge_creator.chomp (names)
+    assign_rooms.chomp (name, index)
 end
