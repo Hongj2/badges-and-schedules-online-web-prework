@@ -14,5 +14,5 @@ end
 
 def printer (attendees)
     batch_badge_creator.each {|attendee| puts (attendee)}
-    puts assign_rooms (attendees)
+    assign_rooms.each {|attendee| puts (attendees)}
 end
