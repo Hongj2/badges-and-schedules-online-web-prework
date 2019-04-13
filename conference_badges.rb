@@ -12,3 +12,8 @@ def assign_rooms (attendees)
   
 end
 
+def printer (attendees)
+  attendees.each_with_index.map do |attendees|
+   puts batch_badge_creator (attendees)
+    puts assign_rooms (attendees)
+end
