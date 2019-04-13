@@ -3,12 +3,12 @@ def badge_maker (name)
 end
 
 def batch_badge_creator (attendees)
-  attendees.collect { |name| badge_maker (name)}
+  attendees.map { |name| badge_maker (name)}
 end
 
 def assign_rooms (attendees)
  
-  attendees.each_with_index.collect { |name,index| "Hello, #{name}! You'll be assigned to room #{index+1}!"}
+  attendees.each_with_index.map { |name,index| "Hello, #{name}! You'll be assigned to room #{index+1}!"}
   
 end
 
